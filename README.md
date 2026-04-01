@@ -50,4 +50,13 @@ pneumatic_sensor.cpp와 proximity_sensor.cpp의 코드를 src/main.cpp에 붙여
 
 <img width="375" height="426" alt="Screenshot from 2026-04-01 14-28-33" src="https://github.com/user-attachments/assets/942fa564-cfcd-41bc-b90a-9d004af5e26a" />
 
-왼쪽 상당 upload할 teensy를 골라 해당 teensy에 코드 upload
+왼쪽 상당 upload할 teensy를 골라 해당 teensy에 코드 upload  
+<img width="415" height="729" alt="Screenshot from 2026-04-01 14-30-58" src="https://github.com/user-attachments/assets/1b7611e2-b0ae-4a08-8b09-36ea669443c6" />
+
+4.micro_ros agent 실행  
+micro_ros 설치가 완료된 상태라면 패키지 내 micro_ros_start.sh 실행 
+```
+./micro_ros_start.sh
+```
+ctrl+c 로 종료
+
