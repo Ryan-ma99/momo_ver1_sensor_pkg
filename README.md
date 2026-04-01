@@ -63,7 +63,7 @@ ctrl+c 로 종료
 
 pneumatic_sensor.cpp
 
-공압패드 데이터의 index는 아래 부분에서 설정 (현재 index는 패키지 pad_index.jpg에서 확인)
+공압패드 데이터의 index는 아래 부분에서 설정 (현재 index는 패키지 momo_pneumatic_sensor_data_index.png 에서 확인)
 ```
 // 15개 채널 사용
 // 원하는 MUX 채널 순서 (15개)
