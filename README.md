@@ -40,8 +40,7 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{seria
 rule 적용 후 usb 해제 후 다시 연결
 ```
 sudo udevadm control --reload-rules
-sudo udevadm trigger<img width="675" height="726" alt="Screenshot from 2026-04-01 14-28-33" src="https://github.com/user-attachments/assets/5f18a50e-ccb8-4f28-93c4-e4dd44dcd700" />
-
+sudo udevadm trigger
 ```
 3.VScode로 업로드  
 본 패키지는 src/main.cpp에 있는 코드를 해당 teensy에 업로드하는 패키지  
