@@ -37,3 +37,17 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{seria
 SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{serial}=="02330020", SYMLINK+="chest_teensy"
 SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{serial}=="00000011", SYMLINK+="proximity"
 ```
+rule 적용 후 usb 해제 후 다시 연결
+```
+sudo udevadm control --reload-rules
+sudo udevadm trigger<img width="675" height="726" alt="Screenshot from 2026-04-01 14-28-33" src="https://github.com/user-attachments/assets/5f18a50e-ccb8-4f28-93c4-e4dd44dcd700" />
+
+```
+3.VScode로 업로드  
+본 패키지는 src/main.cpp에 있는 코드를 해당 teensy에 업로드하는 패키지  
+pneumatic_sensor.cpp와 proximity_sensor.cpp의 코드를 src/main.cpp에 붙여넣어 업로드할 코드 설정  
+아래 사진의 pick a folder를 눌러 해당 패키지 open
+
+<img width="375" height="426" alt="Screenshot from 2026-04-01 14-28-33" src="https://github.com/user-attachments/assets/942fa564-cfcd-41bc-b90a-9d004af5e26a" />
+
+왼쪽 상당 upload할 teensy를 골라 해당 teensy에 코드 upload
